@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d8d4d4;
+    overflow: hidden; /* لمنع التمرير */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* حذف الحد الأقصى للعرض */
+    max-height: 100%; /* حذف الحد الأقصى للارتفاع */
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.left-section {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(140deg, #5d6af1 50%, #9198e5 65%, #e66465 90%);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.chat-box {
+   
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.social-login {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.social-login:hover {
+    background-color: #ddd;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.title{
+    font-family: sans-serif;
+    font-weight: 200; 
+    letter-spacing: 6px;
+    color: white; 
+}
+.chat-box p{
+    font-size: 18px;
+    font-weight: 100;
+   
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    
+}
+
+.line-1 {
+    display: block;
+    transform: rotate(0deg); /* لا ميلان هنا */
+}
+.line-2 {
+    display: block;
+    transform: rotate(0deg); /* لا ميلان هنا */
+    margin-left: 80px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    padding: 9px;
+    gap: 5px;
+    border-radius: 50px;
+    background-color: rgba(145, 152, 229, 0.5); /* لون الخلفية شفاف */
+    color: #ffffff; 
+    font-style: italic; 
+    border: none; /* إزالة أي إطار */
+}
+.dark-teal {
+    color: #404444; /* لون سكني غامق */
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center; /* يوسّط المحتوى أفقياً */
+    align-items: center; /* يوسّط المحتوى عمودياً (إذا كانت هناك ارتفاعات محددة) */
+    height: 100vh; /* تعيين الارتفاع ليكون ملء ارتفاع النافذة بالكامل */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.email input{
+    background-color: #e5e7e6;
+    padding: 15px;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.pass input{
+    background-color: #e5e7e6;
+    padding: 15px;
+}
+
+.continue{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.continue button{
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 30px; 
+}
+
+.google-btn {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    justify-content: center; /* توسيط المحتوى أفقياً */
+    font-weight: 600;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; /* إطار الزر (اختياري) */
+    border-radius: 5px;
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.google-btn svg {
+    vertical-align: middle;
+}
+
+
+.apple-btn {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    justify-content: center; /* توسيط المحتوى أفقياً */
+    font-weight: 600;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; /* إطار الزر (اختياري) */
+    border-radius: 5px;
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.apple-btn svg {
+    vertical-align: middle;
+}
+.error-text {
+    color: red;
+    font-size: 12px; /* يمكنك تعديل الحجم حسب الحاجة */
+  }
+  
+@media (max-width:680px){
+    .left-section{
+        display:none;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+

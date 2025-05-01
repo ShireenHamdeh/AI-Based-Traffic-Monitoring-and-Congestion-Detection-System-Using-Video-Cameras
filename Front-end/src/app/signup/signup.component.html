@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="left-section">
+    <h3 class="title">Traffic Monitor+</h3>
+    <h1>
+        <span class="line-1">Learn, Analyze &</span>
+        <span class="line-2">Understand Traffic in One Place.</span>
+    </h1>
+
+    <div class="traffic-info">
+        <p>Monitor real-time traffic and congestion levels on main roads.</p>
+        <button class="btn">Get Traffic Updates
+            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              
+        </button>
+        <p>Stay updated with the latest traffic status, including:</p>
+        <p>1. Number of vehicles on the road.</p>
+        <p>2. Real-time congestion levels on the main highway.</p>
+        <p>These tools help you plan your trips effectively and save time on the road.</p>
+        <p> Drive safely!</p>
+    </div>
+</div>
+
+    <div class="right-section">
+        <div class="signup-box">
+            <h2 style="text-align:center; font-size:30px">Sign up with free trial</h2>
+            <p class="dark-teal" >Empower your experience, sign up for a free account today</p>
+            <form [formGroup]="signUpForm" (ngSubmit)="registerUser()" class="form">
+                <div class="email">
+                  <label>Email Address*</label>
+                  <input formControlName="email" type="email" placeholder="ex.email@domain.com" required>
+                  <div *ngIf="signUpForm.get('email')?.touched">
+                    <small *ngIf="signUpForm.get('email')?.getError('required')" class="error-text">Email is required.</small>
+                    <small *ngIf="signUpForm.get('email')?.getError('email')" class="error-text">Enter a valid email address.</small>
+                  </div>
+                </div>
+                <div class="pass">
+                  <label>Password*</label>
+                  <input formControlName="password" type="password" placeholder="Enter Password" required>
+                  <div *ngIf="signUpForm.get('password')?.touched">
+                    <small *ngIf="signUpForm.get('password')?.getError('required')" class="error-text">Password is required.</small>
+                    <small *ngIf="signUpForm.get('password')?.getError('minlength')" class="error-text">Password must be at least 8 characters long.</small>
+                  </div>
+                </div>
+                <div class="phone">
+                  <label>Phone Number*</label>
+                  <input formControlName="phoneNumber" type="text" placeholder="Enter Phone Number" required>
+                  <div *ngIf="signUpForm.get('phoneNumber')?.touched">
+                    <small *ngIf="signUpForm.get('phoneNumber')?.getError('required')" class="error-text">Phone number is required.</small>
+                    <small *ngIf="signUpForm.get('phoneNumber')?.getError('pattern')" class="error-text">Enter a valid phone number.</small>
+                  </div>
+                </div>
+                
+                <div class="address">
+                  <label>Address</label>
+                  <input formControlName="address" type="text" placeholder="Enter your address">
+                </div>
+                <button type="submit" [disabled]="signUpForm.invalid" style="background-color: rgb(59, 30, 226); color: white; padding:13px; border-radius: 30px; border: none; ">
+                  Get started free
+                </button>
+              </form>
+              
+            
+            <p style="text-align:center;">Already have an account? <a routerLink="/login" routerLinkActive="active" style="text-decoration:none; color:blue; font-size:16px">Login</a></p>
+            <hr>
+           
+        </div>
+    </div>
+</div>
+

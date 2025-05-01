@@ -1,0 +1,34 @@
+2025-01-26 16:50:29,686 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.73:5000
+2025-01-26 16:50:29,687 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 16:50:29,688 - INFO -  * Restarting with stat
+2025-01-26 16:50:35,016 - WARNING -  * Debugger is active!
+2025-01-26 16:50:35,022 - INFO -  * Debugger PIN: 738-110-798
+2025-01-26 16:50:47,257 - INFO - Frame 1: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:48,872 - INFO - Frame 2: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:50,286 - INFO - Frame 3: Detected Track IDs: [1, 2, 3], Class Labels: [0, 0, 3]
+2025-01-26 16:50:51,738 - INFO - Frame 4: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:53,163 - INFO - Frame 5: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:54,648 - INFO - Frame 6: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:56,059 - INFO - Frame 7: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:57,531 - INFO - Frame 8: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:50:58,970 - INFO - Frame 9: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:51:00,410 - INFO - Frame 10: Detected Track IDs: [1, 2], Class Labels: [0, 0]
+2025-01-26 16:51:01,965 - INFO - Frame 11: Detected Track IDs: [1], Class Labels: [0]
+2025-01-26 16:54:25,121 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.73:5000
+2025-01-26 16:54:25,121 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 16:54:25,123 - INFO -  * Restarting with stat
+2025-01-26 16:54:30,377 - WARNING -  * Debugger is active!
+2025-01-26 16:54:30,382 - INFO -  * Debugger PIN: 738-110-798
+2025-01-26 16:55:35,661 - INFO - 127.0.0.1 - - [26/Jan/2025 16:55:35] "GET /api/track?url=https://www.youtube.com/watch?v%3DY1jTEyb3wiI HTTP/1.1" 200 -
+2025-01-26 17:01:16,739 - INFO - Retrying frame 271...
+2025-01-26 17:01:16,741 - INFO - Retrying frame 271...
+2025-01-26 17:01:16,742 - INFO - Retrying frame 271...
+2025-01-26 17:01:16,743 - INFO - Retrying frame 271...
+2025-01-26 17:01:16,744 - INFO - Retrying frame 271...
+2025-01-26 17:01:16,745 - WARNING - Max retries reached at frame 271. Skipping...

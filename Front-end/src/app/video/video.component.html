@@ -1,0 +1,111 @@
+<div class="container">
+  <h1>Traffic Analysis from Camera Feed</h1>
+
+  <form (ngSubmit)="sendRequest()" class="form-container">
+    <label for="youtubeUrl" class="form-label">Camera URL:</label>
+    <div class="input-group">
+      <input
+        type="text"
+        id="youtubeUrl"
+        [(ngModel)]="youtubeUrl"
+        name="youtubeUrl"
+        class="form-input"
+        placeholder="Enter the camera feed URL..."
+        required
+      />
+      <button type="submit" class="btn-analyze">Analyze</button>
+    </div>
+  </form>
+
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- الرسالة عند بدء التحليل -->
+  <div *ngIf="isAnalyzing" class="analyzing-message">
+    <p>The analysis has started, please wait...</p>
+    <div class="loading-spinner"></div> <!-- عنصر التحميل -->
+  </div>
+
+  <div *ngIf="dataList.length > 0" class="results-container">
+    <!-- الرسم البياني -->
+    <div class="chart-container">
+      <h2>Real-Time Traffic Analysis</h2>
+      <canvas id="trafficChart"></canvas>
+    </div>
+
+    <!-- الجدول -->
+    <div class="table-container">
+      <h2>Traffic Data Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th> <!-- تعديل العنوان -->
+            <th>Number of Vehicles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of dataList">
+            <td>{{ data.timestamp }}</td> <!-- عرض الوقت المرسل من السيرفر -->
+            <td>{{ data.uniqueVehicles }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="container">
+  <h1>Object Detection from YouTube Video</h1>
+  <form (ngSubmit)="sendRequest()">
+    <label for="youtubeUrl">Video URL:</label>
+    <input
+      type="text"
+      id="youtubeUrl"
+      [(ngModel)]="youtubeUrl"
+      name="youtubeUrl"
+      required
+    />
+    <button type="submit">Submit</button>
+  </form>
+
+  <div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <div *ngIf="frames.length > 0">
+    <h2>Results:</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Frame</th>
+          <th>Track IDs</th>
+          <th>Class Labels</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let frame of frames">
+          <td>{{ frame.frame }}</td>
+          <td>{{ frame.track_ids?.join(', ') || 'N/A' }}</td>
+          <td>{{ frame.class_labels?.join(', ') || 'N/A' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="frames.length === 0 && !errorMessage">
+    <p>No data received yet. Please wait...</p>
+  </div>
+</div>
+-->
